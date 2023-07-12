@@ -2,42 +2,52 @@ var container = document.getElementById("container");
 
 var div;
 
-div = "<div class='world'>Hello World</div>";
+div = "<div class='world-div'>1. Hello World</div>";
 
 container.innerHTML += div;
 
-div = "<span class='world'>Hello World</span>";
+var container = document.querySelector(".container");
+
+div = "<span class='world-span'>2. Hello World</span>";
 
 container.innerHTML += div;
 
-div = "<h1 class='world'>Hello World</h1>";
+var container = document.querySelector("#container");
+
+div = "<h1 class='world-h1'>3. Hello World</h1>";
 
 container.innerHTML += div;
 
-div = "<p class='world'>Hello World</p>";
+var container = document.getElementsByClassName("container")[0];
+
+div = "<p class='world-p'>4. Hello World</p>";
 
 container.innerHTML += div;
 
-div = "<strong class='world'>Hello World</strong> <p>";
+var container = document.getElementsByName("container")[0];
+
+div = "<strong class='world-strong'>5. Hello World</strong> <p>";
 
 container.innerHTML += div;
 
-div = "<em class='world'>Hello World</em>";
+var container = document.querySelector("div#container");
+
+div = "<em class='world-em'>6. Hello World</em>";
 
 container.innerHTML += div;
 
-div = "<blockquote class='world'>Hello World</blockquote>";
+var container = document.querySelectorAll(".container")[0];
+
+div = "<blockquote class='world-blockquote'>7. Hello World</blockquote>";
 
 container.innerHTML += div;
 
-div = "<pre class='world'>Hello World</pre>";
+var container = document.querySelectorAll("#container")[0];
+
+div = "<pre class='world-pre'>8. Hello World</pre>";
 
 container.innerHTML += div;
 
-div = "<code class='world'>Hello World</code> <p>";
+console.log("9. Hello World");
 
-container.innerHTML += div;
-
-div = "<kbd class='world'>Hello World</kbd>";
-
-container.innerHTML += div;
+alert("10. Hello World");
